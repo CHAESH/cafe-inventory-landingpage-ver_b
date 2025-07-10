@@ -23,27 +23,28 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-16 sm:py-20 px-4 text-center bg-gradient-to-b from-blue-50 to-white">
+      <section className="relative py-12 sm:py-20 px-4 text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto max-w-4xl">
           <Badge className="mb-4 sm:mb-6 bg-green-100 text-green-800 text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2">
             <TrendingDown className="mr-1.5 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
             원가 30% 절감 사례 다수
           </Badge>
           
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
-            300명의 카페 사장님이 검증한
-            <br />
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-snug">
+            300명의 카페 사장님이<br className="sm:hidden" />
+            검증한<br />
             <span className="text-blue-600">납품업체 리뷰</span> 한눈에
           </h1>
           
-          <p className="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-10 max-w-2xl mx-auto">
-            믿을 수 있는 업체 찾고, 견적 비교하고,<br className="sm:hidden" />
+          <p className="text-base sm:text-xl text-gray-600 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
+            믿을 수 있는 업체 찾고,<br className="sm:hidden" />
+            견적 비교하고,<br />
             매달 50만원 아끼세요
           </p>
           
           <Button
             size="lg"
-            className="bg-orange-500 hover:bg-orange-600 text-white text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 shadow-lg hover:shadow-xl transition-all"
+            className="bg-orange-500 hover:bg-orange-600 text-white text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto max-w-sm mx-auto"
             onClick={() => setIsModalOpen(true)}
           >
             우리 동네 TOP5 업체 보기
@@ -68,38 +69,40 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-12 sm:py-16 px-4 bg-gray-50">
+      <section className="py-10 sm:py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">
-            납품업체 선택, 아직도 이렇게 하시나요?
+          <h2 className="text-xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-12 text-center leading-snug">
+            납품업체 선택,<br className="sm:hidden" />
+            아직도 이렇게<br className="sm:hidden" />
+            하시나요?
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <Card className="p-6 sm:p-8 bg-white border-2 hover:border-red-300 transition-all hover:shadow-md">
+            <Card className="p-5 sm:p-8 bg-white border-2 hover:border-red-300 transition-all hover:shadow-md">
               <CardContent className="p-0 text-center">
                 <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🔍</div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900">정보 찾기 어려움</h3>
-                <p className="text-sm sm:text-base text-gray-600">
+                <h3 className="text-base sm:text-xl font-bold mb-2 text-gray-900">정보 찾기 어려움</h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   "네이버 검색해도<br/>광고만 가득..."
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-6 sm:p-8 bg-white border-2 hover:border-red-300 transition-all hover:shadow-md">
+            <Card className="p-5 sm:p-8 bg-white border-2 hover:border-red-300 transition-all hover:shadow-md">
               <CardContent className="p-0 text-center">
                 <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">😰</div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900">가격 비교 불가</h3>
-                <p className="text-sm sm:text-base text-gray-600">
+                <h3 className="text-base sm:text-xl font-bold mb-2 text-gray-900">가격 비교 불가</h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   "이 가격이<br/>적정한건지..."
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-6 sm:p-8 bg-white border-2 hover:border-red-300 transition-all hover:shadow-md">
+            <Card className="p-5 sm:p-8 bg-white border-2 hover:border-red-300 transition-all hover:shadow-md">
               <CardContent className="p-0 text-center">
                 <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">⏰</div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900">시간 낭비</h3>
-                <p className="text-sm sm:text-base text-gray-600">
+                <h3 className="text-base sm:text-xl font-bold mb-2 text-gray-900">시간 낭비</h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   "일일이 전화해서<br/>물어봐야 해요"
                 </p>
               </CardContent>
