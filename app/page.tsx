@@ -31,15 +31,12 @@ export default function Home() {
           </Badge>
           
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-snug">
-            300명의 카페 사장님이<br className="sm:hidden" />
-            검증한<br />
-            <span className="text-blue-600">납품업체 리뷰</span> 한눈에
+            매달 <span className="text-green-600">50만원씩</span> 원가 절감하는<br />
+            카페들의 비밀
           </h1>
           
           <p className="text-base sm:text-xl text-gray-600 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
-            믿을 수 있는 업체 찾고,<br className="sm:hidden" />
-            견적 비교하고,<br />
-            매달 50만원 아끼세요
+            300명의 카페 사장님이 검증한 납품업체를 한눈에
           </p>
           
           <Button
