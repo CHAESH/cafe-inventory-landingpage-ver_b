@@ -94,9 +94,8 @@ export function EmailModal({ isOpen, onClose, version }: EmailModalProps) {
             </DialogHeader>
             <div className="mt-2" id="dialog-description">
               <div className="bg-blue-50 rounded-lg p-4 mb-6 text-center">
-                <p className="text-gray-700 font-medium">
-                  얼리버드 가입자님께는<br/>
-                  <span className="text-blue-600 font-bold">첫 3개월 무료 + 프리미엄 업체 추천</span>을 드려요!
+                <p className="text-blue-700 font-bold text-lg">
+                  7월 31일까지 가입하시면 <span className="text-orange-500">평생 무료!</span>
                 </p>
               </div>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -121,13 +120,15 @@ export function EmailModal({ isOpen, onClose, version }: EmailModalProps) {
           </>
         ) : (
           <div className="text-center py-6">
+            <DialogTitle className="sr-only">신청 완료</DialogTitle>
             <div className="bg-green-100 rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
               <CheckCircle className="h-10 w-10 text-green-600" />
             </div>
-            <h3 className="text-2xl font-bold mb-3">감사합니다!</h3>
+            <h3 className="text-2xl font-bold mb-3">신청이 완료되었습니다!</h3>
             <p className="text-gray-600 mb-6">
-              곧 좋은 소식으로 찾아뵐게요.<br/>
-              <span className="text-blue-600 font-medium">오픈채팅방에 참여하시면 런칭 소식을 가장 빠르게 받아보실 수 있어요!</span>
+              2025년 8월 출시 예정이며,<br/>
+              출시 시 메일로 안내드리겠습니다.<br/>
+              <span className="text-blue-600 font-medium">서비스 개발에 참여하고 싶으신가요?</span>
             </p>
             <Button
               onClick={openKakaoChat}

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Building2, TrendingDown, Star, BarChart3, MapPin, Package, Clock, Shield } from "lucide-react"
+import { Building2, Star, BarChart3, MapPin, Package, Clock, Shield } from "lucide-react"
 import { EmailModal } from "@/components/email-modal"
 
 export default function Home() {
@@ -25,18 +25,19 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative py-12 sm:py-20 px-4 text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto max-w-4xl">
-          <Badge className="mb-4 sm:mb-6 bg-green-100 text-green-800 text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2">
-            <TrendingDown className="mr-1.5 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-            원가 30% 절감 사례 다수
+          <Badge className="mb-4 sm:mb-6 bg-blue-100 text-blue-800 text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2">
+            <Clock className="mr-1.5 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+            2025년 8월 출시 예정
           </Badge>
           
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-snug">
-            매달 <span className="text-green-600">50만원씩</span> 원가 절감하는<br />
-            카페들의 비밀
+            카페 사장님들이 기다리는<br />
+            <span className="text-blue-600">납품업체 리뷰 플랫폼</span>
           </h1>
           
           <p className="text-base sm:text-xl text-gray-600 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
-            300명의 카페 사장님이 검증한 납품업체를 한눈에
+            실제 카페 사장님들의 솔직한 리뷰로<br className="sm:hidden" />
+            믿을 수 있는 납품업체를 찾아보세요
           </p>
           
           <Button
@@ -44,22 +45,22 @@ export default function Home() {
             className="bg-orange-500 hover:bg-orange-600 text-white text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto max-w-sm mx-auto"
             onClick={() => setIsModalOpen(true)}
           >
-            우리 동네 TOP5 업체 보기
+            출시 알림 신청하기
           </Button>
 
           {/* Trust indicators */}
           <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm sm:text-base text-gray-600">
             <div className="flex items-center gap-1.5 sm:gap-2">
               <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
-              <span>사업자 인증 완료</span>
+              <span>300명+ 사전신청</span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2">
               <Star className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-500 fill-current" />
-              <span>평균 4.8점</span>
+              <span>카페 사장님 추천</span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2">
               <BarChart3 className="h-4 w-4 sm:h-5 sm:w-5 text-green-600" />
-              <span>리뷰 2,150개+</span>
+              <span>월 50만원 절감 가능</span>
             </div>
           </div>
         </div>
@@ -112,10 +113,10 @@ export default function Home() {
       <section className="py-12 sm:py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 text-center">
-            카페서플라이가 해결했습니다
+            카페서플라이가 준비하고 있어요
           </h2>
           <p className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-12 text-center">
-            실제 카페 사장님들의 생생한 후기로 검증된 업체만 모았어요
+            카페 사장님들이 정말 필요로 하는 기능만 담았습니다
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -161,9 +162,6 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
             지금 바로 원가 절감 시작하세요
           </h2>
-          <p className="text-base sm:text-lg mb-6 sm:mb-8 text-white/90">
-            300명의 카페 사장님이 이미 경험했습니다
-          </p>
           
           <Button
             size="lg"
@@ -194,7 +192,7 @@ export default function Home() {
             <span className="text-base sm:text-lg font-bold">카페서플라이</span>
           </div>
           <p className="text-xs sm:text-sm text-gray-400">
-            © 2024 카페서플라이. 카페 사장님을 위한 납품업체 리뷰 플랫폼
+            © 2025 카페서플라이. 카페 사장님을 위한 납품업체 리뷰 플랫폼
           </p>
         </div>
       </footer>
